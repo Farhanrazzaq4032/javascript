@@ -13,21 +13,30 @@
         function fontsize(){
             document.getElementById('demo3').style.fontSize ='40px';
         }
+
+      
     </script>
 </head>
 <body>
     <p id="demo" style="color: red;">My name farhan</p>
     <p id="demo1">chang color</p>
     <p id="demo3">chang Font Size</p>
+    <p id="demo5"></p>
+    <p id="demo4"></p>
 
     <button type="button" onclick='document.getElementById("demo").innerHTML = "my name usman"'>Change Name</button>
 
-    <button type="button" onclick='document.getElementById("demo1").style.color = "green"'>Change color</button>
+    <button type="button" onclick='document.getElementById("demo1").style.color = "blue"'>Change color</button>
 
     <button type="button" onclick= fontsize()>Change Font Size</button>
 
+   
+
     <Script>
-        document.write()
+          function Average(obtainM,totalM){
+            return obtainM / totalM * 100;
+        }
+         document.getElementById("demo5").innerHTML = Average(700,1100);
     </Script>
 </body>
 </html>

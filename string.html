@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Practices
+    </title>
+</head>
+<body>
+    
+    <h2 id="str"></h2>
+    <h2 id="str1"></h2>
+    <h2 id="str2"></h2>
+    <h2 id="str3"></h2>
+    <h2 id="str4"></h2>
+    <h2 id="str5"></h2>
+    <h2 id="str6"></h2>
+
+    <script>
+        let text = "        farhan         "
+        let textm = "farhan, khan, imran khan"
+        let textr = text.replace("farhan", "usman")
+        let texttrim = text.trim();
+
+        document.getElementById("str").innerHTML = text;
+        document.getElementById("str1").innerHTML = "length = " + text.length;
+        document.getElementById("str2").innerHTML = texttrim.length;
+        
+        document.getElementById("str3").innerHTML = textm.slice(10,23) //in which used red -5,-3 this type of parameters
+        document.getElementById("str4").innerHTML = textm.substring(5,10) // grater then 0
+
+        document.getElementById("str5").innerHTML = "<br>" + textr
+
+        
+        
+        
+
+    </script>
+</body>
+</html>
